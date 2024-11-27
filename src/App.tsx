@@ -1,6 +1,5 @@
 import './App.css';
-import {Item} from "./components/item.tsx";
-
+import Subject  from "./components/Subject.tsx";
 
 function App() {
 
@@ -51,45 +50,73 @@ function App() {
     //
     // )
 
-    const itemArray = [];
-    const itemList = [
+    // const itemArray = [];
+    // const itemList = [
+    //
+    //     {
+    //         title: "RAD 1 title",
+    //         desc: "DESC1",
+    //
+    //     },
+    //     {
+    //         title: "RAD 2 title",
+    //         desc: "DESC2",
+    //
+    //     },
+    //     {
+    //         title: "RAD 3 title",
+    //         desc: "DESC3",
+    //
+    //     }
+    // ]
+    //
+    // for (const itemArrayElement of itemList) {
+    //     itemArray.push(
+    //         <Item title={itemArrayElement.title} desc={itemArrayElement.desc}/>
+    //     )
+    // }
+    //
+    //
+    // return(
+    //     <div>
+    //         {itemList.map((item) => (
+    //             <Item title={item.title} desc={item.desc}/>
+    //         ))}
+    //         {itemArray}
+    //     </div>
+    //
+    // )
 
-        {
-            title: "RAD 1 title",
-            desc: "DESC1",
 
-        },
-        {
-            title: "RAD 2 title",
-            desc: "DESC2",
+    // const isLoggingIn : boolean = false;
+    //
+    // let content : ReactElement;
+    //
+    // if (isLoggingIn){
+    //     content = <p>Logging in...</p>
+    // } else {
+    //     content = <p>Not logged in</p>
+    // }
+    //
+    //
+    // return(
+    //     <div>
+    //         {isLoggingIn ? <Dashboard/> : <LoginComponent/>}
+    //         {content}
+    //     </div>
+    // )
 
-        },
-        {
-            title: "RAD 3 title",
-            desc: "DESC3",
+   return(
+       <>
 
-        }
-    ]
+           <Subject name = 'RAD1'>Hello1</Subject>
+           <Subject name = 'RAD2'>Hello2</Subject>
 
-    for (const itemArrayElement of itemList) {
-        itemArray.push(
-            <Item title={itemArrayElement.title} desc={itemArrayElement.desc}/>
-        )
-    }
+       </>
+   )
 
-
-    return(
-        <div>
-            {itemList.map((item) => (
-                <Item title={item.title} desc={item.desc}/>
-            ))}
-            {itemArray}
-        </div>
-
-    )
 
 }
-
 // const itemList = [
 //
 //     {
@@ -108,6 +135,8 @@ function App() {
 //
 //     },
 // ]
+
+
 
 export default App;
 
