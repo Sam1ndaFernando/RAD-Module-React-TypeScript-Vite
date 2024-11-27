@@ -1,3 +1,4 @@
+/*
 export function Item({title, desc} : {title :string , desc :string}) {
     return(
         <>
@@ -19,5 +20,15 @@ export function Item2(props : {title: string, desc : string} ) {
         </>
     )
 }
+*/
+
+export function Item(props : {title :string , desc :string}) {
+    return(
+        <>
+            <h2>{props.title}</h2>
+            <p>{props.desc}</p>
+        </>
 
 
+    )
+}
