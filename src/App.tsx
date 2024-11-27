@@ -116,9 +116,12 @@ function App() {
    //     </>
    // )
 
+
+    let content : string = 'Dashboard';
     function handleClick(type: string) {
         console.log('click');
         alert(type + ' clicked');
+        content = type;
     }
 
     return (
@@ -131,8 +134,9 @@ function App() {
             <ButtonComponent name='Dashboard' onClick={handleClick}></ButtonComponent>
             <ButtonComponent name='Add Customer' onClick={handleClick}></ButtonComponent>
             <ButtonComponent name='Delete Customer' onClick={handleClick}></ButtonComponent>
-        </>
+            {content}
 
+        </>
     );
 
 
