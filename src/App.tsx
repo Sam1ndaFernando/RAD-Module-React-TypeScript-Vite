@@ -1,5 +1,7 @@
 import './App.css';
-import Subject  from "./components/Subject.tsx";
+// import React from "react";
+// import Dashboard from "./components/Dashboard.tsx";
+import ButtonComponent from "./components/ButtonComponent.tsx";
 
 function App() {
 
@@ -90,6 +92,7 @@ function App() {
 
     // const isLoggingIn : boolean = false;
     //
+
     // let content : ReactElement;
     //
     // if (isLoggingIn){
@@ -106,17 +109,36 @@ function App() {
     //     </div>
     // )
 
-   return(
-       <>
+   // return(
+   //     <>
+   //         <Subject name = 'RAD1'>Hello1</Subject>
+   //         <Subject name = 'RAD2'>Hello2</Subject>
+   //     </>
+   // )
 
-           <Subject name = 'RAD1'>Hello1</Subject>
-           <Subject name = 'RAD2'>Hello2</Subject>
+    function handleClick(type: string) {
+        console.log('click');
+        alert(type + ' clicked');
+    }
 
-       </>
-   )
+    return (
+        // <div>
+        //     <ButtonComponent name="Dashboard" onClick={handleClick}/>
+        //     <ButtonComponent name="Add Customer" onClick={handleClick}/>
+        //     <ButtonComponent name="Delete Customer" onClick={handleClick}/>
+        // </div>
+        <>
+            <ButtonComponent name='Dashboard' onClick={handleClick}></ButtonComponent>
+            <ButtonComponent name='Add Customer' onClick={handleClick}></ButtonComponent>
+            <ButtonComponent name='Delete Customer' onClick={handleClick}></ButtonComponent>
+        </>
+
+    );
+
 
 
 }
+
 // const itemList = [
 //
 //     {
